@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manish Photography | Wedding Videography & Photography</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
     body{
       font-family:'Poppins',sans-serif;
-      background-color:#0a0a0a;
+      background:#0b0b0b;
       color:#fff;
       overflow-x:hidden;
     }
 
-    /* ---------- Hero Section ---------- */
+    /* ---------- Header (Hero Section) ---------- */
     header{
       height:100vh;
       background:url('wedding1.jpg') center/cover no-repeat;
@@ -27,29 +30,29 @@
       content:"";
       position:absolute;
       inset:0;
-      background:rgba(0,0,0,0.6);
+      background:rgba(0,0,0,0.55);
     }
     .hero-content{
       position:relative;
-      z-index:2;
       text-align:center;
+      z-index:2;
       max-width:900px;
       padding:20px;
       animation:fadeIn 2s ease;
     }
     .hero-content h1{
-      font-size:3rem;
-      font-weight:700;
-      letter-spacing:2px;
-      background:linear-gradient(45deg,#ffcc00,#ff6600);
-      -webkit-background-clip:text;
-      color:transparent;
+      font-family:'Great Vibes',cursive;
+      font-size:4rem;
+      color:#ffb400;
+      text-shadow:0 0 20px rgba(255,180,0,0.5);
+      margin-bottom:10px;
     }
     .hero-content p{
       font-size:1.2rem;
-      color:#f1f1f1;
+      color:#eaeaea;
       margin-top:10px;
     }
+
     .hero-buttons{
       margin-top:30px;
       display:flex;
@@ -58,37 +61,28 @@
       gap:15px;
     }
     .btn{
-      padding:12px 25px;
+      padding:12px 28px;
       border:none;
-      border-radius:8px;
-      font-weight:600;
+      border-radius:10px;
       text-decoration:none;
-      transition:0.3s;
+      font-weight:600;
       cursor:pointer;
+      transition:0.3s ease;
+      letter-spacing:0.5px;
     }
-    .btn-call{
-      background:#ffb400;
-      color:#000;
-    }
-    .btn-call:hover{background:#ffc733;transform:scale(1.05);}
-    .btn-whatsapp{
-      background:#25D366;
-      color:#fff;
-    }
-    .btn-whatsapp:hover{background:#22b85a;transform:scale(1.05);}
+    .btn-call{background:#ffb400;color:#000;}
+    .btn-call:hover{background:#ffd451;transform:scale(1.07);}
+    .btn-whatsapp{background:#25D366;color:#fff;}
+    .btn-whatsapp:hover{background:#1fb358;transform:scale(1.07);}
     .btn-book{
-      background:linear-gradient(90deg,#ff6600,#ffb400);
+      background:linear-gradient(90deg,#ff8800,#ffb400);
       color:#000;
+      font-weight:700;
       animation:pulse 2s infinite;
     }
-    .btn-book:hover{transform:scale(1.07);}
 
-    @keyframes fadeIn{
-      from{opacity:0;transform:translateY(20px);}
-      to{opacity:1;transform:translateY(0);}
-    }
     @keyframes pulse{
-      0%,100%{box-shadow:0 0 15px rgba(255,180,0,0.3);}
+      0%,100%{box-shadow:0 0 10px rgba(255,180,0,0.3);}
       50%{box-shadow:0 0 25px rgba(255,180,0,0.7);}
     }
 
@@ -96,18 +90,19 @@
     .about{
       background:#111;
       text-align:center;
-      padding:60px 20px;
+      padding:70px 25px;
     }
     .about h2{
-      font-size:2.2rem;
+      font-family:'Great Vibes',cursive;
       color:#ffb400;
+      font-size:2.6rem;
       margin-bottom:15px;
     }
     .about p{
-      max-width:750px;
+      max-width:800px;
       margin:auto;
-      line-height:1.6;
       color:#ccc;
+      line-height:1.7;
       font-size:1rem;
     }
 
@@ -115,24 +110,25 @@
     .video-section{
       background:#0d0d0d;
       text-align:center;
-      padding:50px 20px;
+      padding:60px 25px;
     }
     .video-section h2{
-      font-size:2rem;
+      font-family:'Great Vibes',cursive;
       color:#ffb400;
+      font-size:2.5rem;
       margin-bottom:20px;
     }
     video{
       width:90%;
-      max-width:900px;
-      border-radius:12px;
+      max-width:950px;
+      border-radius:15px;
       box-shadow:0 0 35px rgba(255,180,0,0.3);
     }
 
     /* ---------- Gallery ---------- */
     .gallery{
-      padding:60px 20px;
       background:#111;
+      padding:60px 25px;
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
       gap:15px;
@@ -146,7 +142,7 @@
     }
     .gallery img:hover{
       transform:scale(1.05);
-      box-shadow:0 0 20px rgba(255,180,0,0.4);
+      box-shadow:0 0 20px rgba(255,180,0,0.5);
     }
 
     /* ---------- Booking Banner ---------- */
@@ -154,11 +150,12 @@
       background:linear-gradient(90deg,#ffb400,#ff6600);
       color:#000;
       text-align:center;
-      padding:30px 20px;
+      padding:50px 25px;
     }
     .booking-banner h2{
+      font-family:'Great Vibes',cursive;
+      font-size:2.5rem;
       margin-bottom:10px;
-      font-size:2rem;
     }
     .booking-banner p{
       font-size:1.1rem;
@@ -169,18 +166,24 @@
     footer{
       background:#000;
       text-align:center;
-      padding:15px;
-      font-weight:600;
+      padding:20px;
       color:#ffb400;
+      font-weight:600;
     }
     footer a{
       color:#ffb400;
       text-decoration:none;
     }
 
+    /* ---------- Animation ---------- */
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(20px);}
+      to{opacity:1;transform:translateY(0);}
+    }
+
     @media(max-width:600px){
-      .hero-content h1{font-size:2.1rem;}
-      .hero-content p{font-size:1rem;}
+      .hero-content h1{font-size:2.8rem;}
+      .about h2,.video-section h2,.booking-banner h2{font-size:2rem;}
       video{width:100%;}
     }
   </style>
@@ -188,26 +191,26 @@
 
 <body>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <header>
     <div class="hero-content">
       <h1>Manish Photography</h1>
-      <p>Capturing your beautiful moments with cinematic perfection.</p>
+      <p>Where Emotions Meet Art — Capture your story in every frame.</p>
       <div class="hero-buttons">
         <a class="btn btn-call" href="tel:+917323001078">📞 Call for Booking</a>
         <a class="btn btn-whatsapp" href="https://wa.me/917323001078" target="_blank">💬 WhatsApp Now</a>
-        <a class="btn btn-book" href="#book-now">📷 Book Now</a>
+        <a class="btn btn-book" href="#book-now">📸 Book Now</a>
       </div>
     </div>
   </header>
 
   <!-- ABOUT -->
   <section class="about">
-    <h2>Why Choose Manish Photography?</h2>
+    <h2>About Us</h2>
     <p>
-      We don’t just take pictures — we capture emotions, details, and the story behind every moment.
-      From weddings to pre-weddings, we bring cinematic experience to life. Our expert photographers
-      and videographers ensure every click is a masterpiece.
+      At <b>Manish Photography</b>, we believe every picture tells a story —
+      a smile, a tear, a moment of joy. Our professional team blends creativity and emotion
+      to craft cinematic memories that last forever. From weddings to pre-weddings, we make your moments magical.
     </p>
   </section>
 
@@ -231,10 +234,10 @@
     <img src="wedding7.jpg" alt="Wedding Photo 7">
   </section>
 
-  <!-- BOOKING CTA -->
+  <!-- BOOKING SECTION -->
   <section id="book-now" class="booking-banner">
-    <h2>Book Your Special Day Now!</h2>
-    <p>Limited slots available. Contact us today to make your memories unforgettable.</p>
+    <h2>Book Your Dream Moments Now!</h2>
+    <p>Limited slots available — let’s make your wedding cinematic and unforgettable.</p>
     <a class="btn btn-call" href="tel:+917323001078">📞 Call for Booking</a>
     <a class="btn btn-whatsapp" href="https://wa.me/917323001078" target="_blank">💬 WhatsApp Now</a>
   </section>
@@ -245,4 +248,4 @@
   </footer>
 
 </body>
-  </html>
+</html>
