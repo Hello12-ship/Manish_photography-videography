@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Photography | Wedding Videography & Photography</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    header {
+      height: 90vh;
+      background: url('wedding1.jpg') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      background: linear-gradient(45deg, #ffcc00, #ff8800);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: fadeInDown 1.5s ease;
+    }
+    .hero-content p {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      animation: fadeInUp 2s ease;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: linear-gradient(90deg,#ffb400,#ff8400);
+      border-radius: 8px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+    .cta:hover { transform: scale(1.05); }
+
+    /* Video Section */
+    .video-section {
+      background: #111;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .video-section h2 {
+      font-size: 2rem;
+      color: #ffb400;
+      margin-bottom: 20px;
+    }
+    video {
+      width: 90%;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255,180,0,0.2);
+    }
+
+    /* Gallery */
+    .gallery {
+      padding: 50px 20px;
+      background: #0f0f0f;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,180,0,0.4);
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      background: linear-gradient(90deg, rgba(255,180,0,0.9), rgba(255,120,0,0.9));
+      color: #000;
+      font-weight: 700;
+    }
+    footer a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media(max-width:600px){
+      .hero-content h1{font-size:2.1rem;}
+      .hero-content p{font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-content">
+      <h1>Manish Photography</h1>
+      <p>Capturing Emotions, Crafting Memories — Every Frame, Every Moment.</p>
+      <a class="cta" href="tel:+917323001078">📞 Call / WhatsApp: +91 73230 01078</a>
+    </div>
+  </header>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>Wedding Highlight</h2>
+    <video controls playsinline preload="metadata" poster="wedding1.jpg">
+      <source src="wedding_video.mp4" type="video/mp4">
+      Your browser does not support this video.
+    </video>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <img src="wedding1.jpg" alt="Wedding Photo 1">
+    <img src="wedding2.jpg" alt="Wedding Photo 2">
+    <img src="wedding3.jpg" alt="Wedding Photo 3">
+    <img src="wedding4.jpg" alt="Wedding Photo 4">
+    <img src="wedding5.jpg" alt="Wedding Photo 5">
+    <img src="wedding6.jpg" alt="Wedding Photo 6">
+    <img src="wedding7.jpg" alt="Wedding Photo 7">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="tel:+917323001078">📸 Manish Photography • +91 73230 01078</a>
+  </footer>
+
+</body>
+</html>
